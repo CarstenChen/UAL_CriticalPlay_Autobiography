@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98054a99caf0494479083a89315bdeed, type: 3}
+  m_Name: Dialogues
+  m_EditorClassIdentifier: 
+  dialogues:
+  - plotID: 0
+    index: 0
+    nextIndex: 1
+    text: We finally made it all the way to London!
+    playerID: 1
+    audio: {fileID: 8300000, guid: 7c6d1bdf6bab2ba41bf77a373981de4a, type: 3}
+    blockInput: 1
+  - plotID: 0
+    index: 1
+    nextIndex: 2
+    text: Yes, but I feel I even don't know how to walk in such a new place.
+    playerID: 0
+    audio: {fileID: 8300000, guid: 3963f75fe2841764bbeb4b5786a4c245, type: 3}
+    blockInput: 1
+  - plotID: 0
+    index: 2
+    nextIndex: 3
+    text: It's okay, at least we're both here together, so we have each other to
+      look out for.
+    playerID: 1
+    audio: {fileID: 8300000, guid: 575d6f056345ca443b92d295ba4e9dd0, type: 3}
+    blockInput: 1
+  - plotID: 0
+    index: 3
+    nextIndex: 4
+    text: That's right!
+    playerID: 0
+    audio: {fileID: 8300000, guid: fa728aaa3c6d59b4183e7aac57d0d793, type: 3}
+    blockInput: 1
+  - plotID: 0
+    index: 4
+    nextIndex: -1
+    text: Let's <b><color=#FF8800>get our new place sorted out</color></b> before
+      we start living here!
+    playerID: 1
+    audio: {fileID: 8300000, guid: 2571574fb4d14d4408a9515194633475, type: 3}
+    blockInput: 1
+  - plotID: 1
+    index: 0
+    nextIndex: 1
+    text: Phew, finally finished!
+    playerID: 1
+    audio: {fileID: 8300000, guid: 98ceb255623b81e4bafd343a46bcace5, type: 3}
+    blockInput: 1
+  - plotID: 1
+    index: 1
+    nextIndex: 2
+    text: It's time to start a new life!
+    playerID: 0
+    audio: {fileID: 8300000, guid: 78e92030479aaf8488a88c04ce858cbc, type: 3}
+    blockInput: 1
+  - plotID: 1
+    index: 2
+    nextIndex: -1
+    text: Yes, a stressful and exciting life.
+    playerID: 1
+    audio: {fileID: 8300000, guid: 749b6897e1d8b594dad35d6e08b081ac, type: 3}
+    blockInput: 1
+  - plotID: 2
+    index: 0
+    nextIndex: -1
+    text: How about a break with some <b><color=#FF8800>music</color></b>?
+    playerID: 0
+    audio: {fileID: 8300000, guid: 5066f9e61e059fb4b83e8dce47200b22, type: 3}
+    blockInput: 0
