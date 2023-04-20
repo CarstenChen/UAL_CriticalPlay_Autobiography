@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     public ArrangementManager arrangementManager;
     public MusicMachine musicMachine;
+    public BalanceEventManager balanceEventManager;
 
     public bool dialogueArriveHomeStart;
     public bool dialogueArriveHomeFinished;
@@ -19,6 +20,9 @@ public class GameManager : MonoBehaviour
     public bool arrangementFinished;
     public bool layDownEventStart;
     public bool layDownEventFinished;
+    public bool hasChangeToFullRoom;
+    public bool balanceEventStart;
+    public bool balanceEventFinished;
 
     public GameObject grabUI;
 
@@ -33,7 +37,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
 
 
     }
@@ -74,7 +78,7 @@ public class GameManager : MonoBehaviour
             musicMachine.enabled = true;
         }
 
-        if(playerP1.inLayDownEvent && playerP2.inLayDownEvent && !layDownEventFinished)
+        if (playerP1.inLayDownEvent && playerP2.inLayDownEvent && !layDownEventFinished)
         {
             if (!isInDialogue)
             {
@@ -82,6 +86,13 @@ public class GameManager : MonoBehaviour
                 StartCoroutine(WaitDialogue(1));
             }
 
+        }
+
+        if (layDownEventFinished && !hasChangeToFullRoom)
+        {
+            StartCoroutine(SceneLoader.instance.LoadScene("FullRoom", Color.white));
+            hasChangeToFullRoom = true;
+            StartCoroutine(StartBalanceEvent());
         }
     }
 
@@ -101,10 +112,24 @@ public class GameManager : MonoBehaviour
             case 2:
                 layDownEventStart = true;
                 break;
-
+            case 3:
+                balanceEventStart = true;
+                balanceEventManager.enabled = true;
+                break;
         }
 
         isInDialogue = false;
 
+    }
+    IEnumerator StartBalanceEvent()
+    {
+        yield return new WaitUntil(() => SceneLoader.isLoadingScene == false);
+        
+
+        if (!isInDialogue)
+        {
+            DialogueManager.Instance.DisplayLine(3, 0);
+            StartCoroutine(WaitDialogue(3));
+        }       
     }
 }

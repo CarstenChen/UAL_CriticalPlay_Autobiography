@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerArea : MonoBehaviour
 {
-    public GameObject tipEffect;
-    public GameObject inAreaEffect;
+    public PlayerController playerP1;
+    public PlayerController playerP2;
+
     public int playerID;
 
     // Start is called before the first frame update
@@ -18,5 +19,23 @@ public class PlayerArea : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (playerID == 0)
+        {
+            if (other.tag == "Player2MainBody")
+            {
+                BalanceEventManager.Instance.player1Win = true;
+            }
+        }
+        else if (playerID == 1)
+        {
+            if (other.tag == "Player1MainBody")
+            {
+                BalanceEventManager.Instance.player2Win = true;
+            }
+        }
     }
 }

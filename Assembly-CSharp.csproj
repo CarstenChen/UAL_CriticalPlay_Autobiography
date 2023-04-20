@@ -74,6 +74,7 @@
     <Compile Include="Assets\Mocha Inc_\Active Ragdoll Character Controller\Scripts\ImpactBooster.cs" />
     <Compile Include="Assets\DonDestroyOnLoad.cs" />
     <Compile Include="Assets\Mocha Inc_\Active Ragdoll Character Controller\Scripts\CanisterScript.cs" />
+    <Compile Include="Assets\PlayerArea.cs" />
     <Compile Include="Assets\Mocha Inc_\Active Ragdoll Character Controller\Scripts\AiJointController.cs" />
     <Compile Include="Assets\Mocha Inc_\Active Ragdoll Character Controller\Scripts\ActiveRagdollController.cs" />
     <Compile Include="Assets\LookAt.cs" />
@@ -98,6 +99,7 @@
     <Compile Include="Assets\Mocha Inc_\Active Ragdoll Character Controller\Scripts\AiRagdollBody.cs" />
     <Compile Include="Assets\SceneLoader.cs" />
     <Compile Include="Assets\PlayerController.cs" />
+    <Compile Include="Assets\BalanceEventManager.cs" />
     <Compile Include="Assets\Mocha Inc_\Active Ragdoll Character Controller\Scripts\GrabScript.cs" />
     <Compile Include="Assets\LayDownArea.cs" />
     <Compile Include="Assets\ArrangedArea.cs" />
@@ -112,8 +114,6 @@
     <Compile Include="Assets\PunchDamage.cs" />
     <Compile Include="Assets\LayDownEventManager.cs" />
     <Compile Include="Assets\Mocha Inc_\Active Ragdoll Character Controller\Scripts\DestructableScript.cs" />
-    <Compile Include="Assets\BalanceEventManager.cs" />
-    <Compile Include="Assets\PlayerArea.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
