@@ -10,7 +10,7 @@ public class BalanceEventManager : MonoBehaviour
     public PlayerArea playerAreaP2;
     public bool player1Win;
     public bool player2Win;
-
+    public GameObject guideUI;
     private void Awake()
     {
         if(instance == null)
@@ -21,6 +21,7 @@ public class BalanceEventManager : MonoBehaviour
 
     private void OnEnable()
     {
+        guideUI.SetActive(true);
         playerAreaP1.gameObject.SetActive(true);
         playerAreaP2.gameObject.SetActive(true);
     }
@@ -37,6 +38,7 @@ public class BalanceEventManager : MonoBehaviour
         {
             playerAreaP1.enabled = false;
             playerAreaP2.enabled = false;
+            GameManagerFullRoom.Instance.balanceEventFinished = true;
         }
     }
 }

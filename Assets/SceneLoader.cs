@@ -24,6 +24,7 @@ public class SceneLoader : MonoBehaviour
             e.name = "EventSystem";
         }
 
+        isLoadingScene = false;
     }
     // Start is called before the first frame update
     void Start()

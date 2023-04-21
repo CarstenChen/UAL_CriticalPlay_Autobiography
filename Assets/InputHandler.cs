@@ -31,7 +31,18 @@ public class InputHandler : MonoBehaviour
     {
         if (DialogueManager.Instance)
         {
-            blockInput = DialogueManager.Instance.blockInput;
+            if (DialogueManager.Instance.blockInput || SceneLoader.isLoadingScene)
+            {
+                blockInput = true;
+            }
+            else
+            {
+                blockInput = false;
+            }
+        }
+        else
+        {
+            blockInput = SceneLoader.isLoadingScene;
         }
     }
 

@@ -11,7 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DecoratedRoom.unity
     guid: bb016aeb0f9e0a145804fc621411e132
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Room.unity
     guid: 651ecb8edfaaeff4c956002c366ce36c
+  - enabled: 1
+    path: Assets/Scenes/Clip1.unity
+    guid: 50ebe340924336e42b53e78ecad4b85f
+  - enabled: 1
+    path: Assets/Scenes/FullRoom.unity
+    guid: 8faeeb5d9b1180d408b468f458f34a0b
   m_configObjects: {}

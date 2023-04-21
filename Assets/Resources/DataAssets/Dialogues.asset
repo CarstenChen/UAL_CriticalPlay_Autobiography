@@ -75,6 +75,34 @@ MonoBehaviour:
     index: 0
     nextIndex: -1
     text: How about a break with some <b><color=#FF8800>music</color></b>?
-    playerID: 0
+    playerID: 1
     audio: {fileID: 8300000, guid: 5066f9e61e059fb4b83e8dce47200b22, type: 3}
     blockInput: 0
+  - plotID: 3
+    index: 0
+    nextIndex: 1
+    text: It's been a whole week of studying, let's play together for a while.
+    playerID: 0
+    audio: {fileID: 8300000, guid: 1d77c367208a7be46a5951d981b1b2a8, type: 3}
+    blockInput: 1
+  - plotID: 3
+    index: 1
+    nextIndex: 2
+    text: No, next week is deadline, so let's finish the last bit of work.
+    playerID: 1
+    audio: {fileID: 8300000, guid: 58fe49badaf248d48853f4d022e363a1, type: 3}
+    blockInput: 1
+  - plotID: 3
+    index: 2
+    nextIndex: 3
+    text: Come on, we should balance work and play.
+    playerID: 0
+    audio: {fileID: 8300000, guid: d64fd5967fc800e468de00b5775c3aa1, type: 3}
+    blockInput: 1
+  - plotID: 3
+    index: 3
+    nextIndex: -1
+    text: Don't just think about playing all day long, we're here in London to study.
+    playerID: 1
+    audio: {fileID: 8300000, guid: dad9f1e35e2a9fe458a805f9640f5b63, type: 3}
+    blockInput: 1

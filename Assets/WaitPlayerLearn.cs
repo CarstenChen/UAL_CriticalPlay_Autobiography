@@ -6,7 +6,7 @@ public class WaitPlayerLearn : MonoBehaviour
 {
     public enum PlayerBehaviour
     {
-        Lie,Grab,WalkAndJump
+        Lie,Grab,WalkAndJump,BalanceGameplay
     }
     public PlayerController playerP1;
     public PlayerController playerP2;
@@ -39,6 +39,12 @@ public class WaitPlayerLearn : MonoBehaviour
                 if (playerP1.move.magnitude > 0.1f && !playerP1.isGrounded) performedP1 = true;
                 if (playerP2.move.magnitude > 0.1f && !playerP2.isGrounded) performedP2 = true;
                 break;
+            case PlayerBehaviour.BalanceGameplay:
+                if (playerP1.handLeft.itemOnLeft || playerP1.handRight.itemOnRight) performedP1 = true;
+                if (playerP2.handLeft.itemOnLeft || playerP2.handRight.itemOnRight) performedP2 = true;
+                if(GameManagerFullRoom.Instance.balanceEventFinished) { performedP1 = true; performedP2 = true; }
+                break;
+
         }
 
         if (performedP1 && performedP2)

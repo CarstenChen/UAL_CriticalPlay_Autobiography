@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
     public ArrangementManager arrangementManager;
     public MusicMachine musicMachine;
-    public BalanceEventManager balanceEventManager;
+
 
     public bool dialogueArriveHomeStart;
     public bool dialogueArriveHomeFinished;
@@ -20,9 +20,8 @@ public class GameManager : MonoBehaviour
     public bool arrangementFinished;
     public bool layDownEventStart;
     public bool layDownEventFinished;
-    public bool hasChangeToFullRoom;
-    public bool balanceEventStart;
-    public bool balanceEventFinished;
+    public bool hasChangeToClip1;
+
 
     public GameObject grabUI;
 
@@ -32,7 +31,6 @@ public class GameManager : MonoBehaviour
         if (instance == null)
             instance = this;
 
-        GameObject.DontDestroyOnLoad(this.gameObject);
     }
     // Start is called before the first frame update
     void Start()
@@ -88,11 +86,11 @@ public class GameManager : MonoBehaviour
 
         }
 
-        if (layDownEventFinished && !hasChangeToFullRoom)
+        if (layDownEventFinished && !hasChangeToClip1)
         {
-            StartCoroutine(SceneLoader.instance.LoadScene("FullRoom", Color.white));
-            hasChangeToFullRoom = true;
-            StartCoroutine(StartBalanceEvent());
+            StartCoroutine(SceneLoader.instance.LoadScene("Clip1", Color.white));
+            hasChangeToClip1 = true;
+            //StartCoroutine(StartBalanceEvent());
         }
     }
 
@@ -113,8 +111,8 @@ public class GameManager : MonoBehaviour
                 layDownEventStart = true;
                 break;
             case 3:
-                balanceEventStart = true;
-                balanceEventManager.enabled = true;
+                //balanceEventStart = true;
+                //balanceEventManager.enabled = true;
                 break;
         }
 

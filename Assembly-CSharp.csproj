@@ -114,6 +114,9 @@
     <Compile Include="Assets\PunchDamage.cs" />
     <Compile Include="Assets\LayDownEventManager.cs" />
     <Compile Include="Assets\Mocha Inc_\Active Ragdoll Character Controller\Scripts\DestructableScript.cs" />
+    <Compile Include="Assets\GameManagerFullRoom.cs" />
+    <Compile Include="Assets\ClipManager.cs" />
+    <Compile Include="Assets\Thanks.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -1,0 +1,275 @@
+Using pre-set license
+Built from '2021.3/china_unity/release' branch; Version is '2021.3.6f1c1 (07401303b748) revision 475155'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 65404 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\2021.3.6f1c1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker6
+-projectPath
+D:/developer/Unity/GitHub Projects/UAL_CriticalPlay_Autobiography
+-logFile
+Logs/AssetImportWorker6.log
+-srvPort
+52682
+Successfully changed project path to: D:/developer/Unity/GitHub Projects/UAL_CriticalPlay_Autobiography
+D:/developer/Unity/GitHub Projects/UAL_CriticalPlay_Autobiography
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+AS: AutoStreaming module initializing.
+Refreshing native plugins compatible for Editor in 106.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.6f1c1 (07401303b748)
+[Subsystems] Discovering subsystems at path D:/Unity/2021.3.6f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/developer/Unity/GitHub Projects/UAL_CriticalPlay_Autobiography/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 Laptop GPU (ID=0x24dc)
+    Vendor:   NVIDIA
+    VRAM:     16201 MB
+    Driver:   30.0.15.1236
+Initialize mono
+Mono path[0] = 'D:/Unity/2021.3.6f1c1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2021.3.6f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2021.3.6f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56840
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2021.3.6f1c1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Unity/2021.3.6f1c1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/Unity/2021.3.6f1c1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: D:/Unity/2021.3.6f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: D:/Unity/2021.3.6f1c1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.009527 seconds.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 104.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.707 seconds
+Domain Reload Profiling:
+	ReloadAssembly (707ms)
+		BeginReloadAssembly (109ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (479ms)
+			LoadAssemblies (104ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (96ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (292ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (60ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (104ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (85ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.027128 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\developer\Unity\GitHub Projects\UAL_CriticalPlay_Autobiography\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\developer\Unity\GitHub Projects\UAL_CriticalPlay_Autobiography\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 115.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.693 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1694ms)
+		BeginReloadAssembly (261ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (136ms)
+		EndReloadAssembly (1295ms)
+			LoadAssemblies (156ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (266ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (147ms)
+			SetupLoadedEditorAssemblies (682ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (28ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (116ms)
+				BeforeProcessingInitializeOnLoad (120ms)
+				ProcessInitializeOnLoadAttributes (325ms)
+				ProcessInitializeOnLoadMethodAttributes (73ms)
+				AfterProcessingInitializeOnLoad (19ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5729 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (0.8 MB). Loaded Objects now: 6183.
+Memory consumption went from 229.1 MB to 228.3 MB.
+Total: 4.488700 ms (FindLiveObjects: 0.562600 ms CreateObjectMapping: 0.238400 ms MarkObjects: 3.343700 ms  DeleteObjects: 0.342600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 7268.318954 seconds.
+  path: Assets/Resources/Sounds/NewAILines/12.mp3
+  artifactKey: Guid(d64fd5967fc800e468de00b5775c3aa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sounds/NewAILines/12.mp3 using Guid(d64fd5967fc800e468de00b5775c3aa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53aa9eef7b92aaf458aa5949edea6167') in 0.117116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 167.113981 seconds.
+  path: Assets/Resources/Sounds/ES_Softly Sleep - Anna Landstrom.mp3
+  artifactKey: Guid(66b11e19caf423c43817057aee1db367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sounds/ES_Softly Sleep - Anna Landstrom.mp3 using Guid(66b11e19caf423c43817057aee1db367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc3d08736d40710d8b67737fff0a933c') in 0.023314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.526832 seconds.
+  path: Assets/Scenes/FullRoom.unity
+  artifactKey: Guid(8faeeb5d9b1180d408b468f458f34a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/FullRoom.unity using Guid(8faeeb5d9b1180d408b468f458f34a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9011c9de24bf40f64c8271edfba11c7') in 0.002763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.032834 seconds.
+  path: Assets/Scenes/DecoratedRoom.unity
+  artifactKey: Guid(bb016aeb0f9e0a145804fc621411e132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/DecoratedRoom.unity using Guid(bb016aeb0f9e0a145804fc621411e132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a243bf339ab38a5f158a819920af510a') in 0.006419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.249633 seconds.
+  path: Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/anvil1.wav
+  artifactKey: Guid(e5645750a7c0d174bbad3833a6d7eb95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/anvil1.wav using Guid(e5645750a7c0d174bbad3833a6d7eb95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e751cc054fe0cea776f620710e8fe5d') in 0.030719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/ZombieHurtShort.wav
+  artifactKey: Guid(d396a78b42e069e43b62ddd3a23cc7a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/ZombieHurtShort.wav using Guid(d396a78b42e069e43b62ddd3a23cc7a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38681b4f5abdd932614bd7512d2ac8d5') in 0.027351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/release2.wav
+  artifactKey: Guid(701ddd618417d04479ba11044f4914e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/release2.wav using Guid(701ddd618417d04479ba11044f4914e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8245d719dd9fc4203b7d67474ddbb1b5') in 0.024042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/ExplosionLong.wav
+  artifactKey: Guid(84c0da725cb08bd41bf03eef93f9c2fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/ExplosionLong.wav using Guid(84c0da725cb08bd41bf03eef93f9c2fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '939e0ca698e40d6008511ce8f99dbd01') in 0.026684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/thud2.wav
+  artifactKey: Guid(50f16a088377f9141996cb43c47815ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/thud2.wav using Guid(50f16a088377f9141996cb43c47815ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9b3e2e71522929d0cb36fa946ba2847') in 0.025274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/pistolShot.wav
+  artifactKey: Guid(9103b71ced88e1547a42926cc588c132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/pistolShot.wav using Guid(9103b71ced88e1547a42926cc588c132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bfa0522a800266e63cb8d0b7b86a5a1') in 0.027538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/release 1.wav
+  artifactKey: Guid(b0f3233582f23a34fb1d30057ef2722e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/release 1.wav using Guid(b0f3233582f23a34fb1d30057ef2722e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '211079cd64c9081dfa02c98fbd224328') in 0.027431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/rocks3.wav
+  artifactKey: Guid(38e3d1a9d56ed6c4c8df289684b88025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/rocks3.wav using Guid(38e3d1a9d56ed6c4c8df289684b88025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d55c378a0106c452110e00d00d6f9a2') in 0.032615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/grab1.flac
+  artifactKey: Guid(52f606b75bc7ef54db90fde40ab8e56d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/grab1.flac using Guid(52f606b75bc7ef54db90fde40ab8e56d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a07b4e930ccd319e70a02984c1640987') in 0.031097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/ballimpact2.wav
+  artifactKey: Guid(3b069e1cde440af498f50a8c4e00a64c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/ballimpact2.wav using Guid(3b069e1cde440af498f50a8c4e00a64c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0fad4ea99cb79115fe825baa06a3975') in 0.023499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/rocks1.wav
+  artifactKey: Guid(6bbbc02ca4286eb45b1a4c106f765ffe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/rocks1.wav using Guid(6bbbc02ca4286eb45b1a4c106f765ffe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e133f2323ad47a5f52a2ba77c98bc27') in 0.024310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/rocks2.wav
+  artifactKey: Guid(f2661f63b3d56b843b31b767988564d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mocha Inc_/Active Ragdoll Character Controller/Sounds/rocks2.wav using Guid(f2661f63b3d56b843b31b767988564d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '578f6f5a99cfc53a5846992c3124c3a6') in 0.029597 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
