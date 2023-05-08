@@ -60,6 +60,10 @@ MonoBehaviour:
   handRight: {fileID: 4816744770326909501}
   isPunching: 0
   isLaying: 0
+  inLayDownEvent: 0
+  resetInteract: 0
+  inImportantTrigger: 0
+  blockLayDown: 0
 --- !u!1001 &4816744771525771240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -105,17 +109,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 1328338fdb9bb814b85406e6942e4e91,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1328338fdb9bb814b85406e6942e4e91,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1328338fdb9bb814b85406e6942e4e91,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1328338fdb9bb814b85406e6942e4e91,
         type: 3}
@@ -1444,17 +1448,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 1328338fdb9bb814b85406e6942e4e91,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1328338fdb9bb814b85406e6942e4e91,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1328338fdb9bb814b85406e6942e4e91,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1328338fdb9bb814b85406e6942e4e91,
         type: 3}
@@ -1821,6 +1825,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player1
       objectReference: {fileID: 0}
+    - target: {fileID: -3151966692224455790, guid: 1328338fdb9bb814b85406e6942e4e91,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c79bbc32daa9b454c8c4f700217727af, type: 2}
     - target: {fileID: -3086722415294654018, guid: 1328338fdb9bb814b85406e6942e4e91,
         type: 3}
       propertyPath: m_Layer
@@ -2077,7 +2086,7 @@ PrefabInstance:
     - target: {fileID: 1082271958561512970, guid: 1328338fdb9bb814b85406e6942e4e91,
         type: 3}
       propertyPath: m_TagString
-      value: Player1
+      value: Player1MainBody
       objectReference: {fileID: 0}
     - target: {fileID: 1160404034195463747, guid: 1328338fdb9bb814b85406e6942e4e91,
         type: 3}
@@ -2547,7 +2556,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!136 &4816744771476473407
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2706,7 +2715,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!153 &4816744770283047688
 ConfigurableJoint:
   m_ObjectHideFlags: 0
@@ -2851,7 +2860,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!136 &4816744770509098032
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3010,7 +3019,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 2
 --- !u!135 &4816744770893624918
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3168,7 +3177,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!135 &4816744769946655498
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3326,7 +3335,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 2
 --- !u!135 &4816744770413824050
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3484,7 +3493,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!136 &4816744770831178073
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3643,7 +3652,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!136 &4816744770914540068
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3802,7 +3811,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!153 &4816744769870642702
 ConfigurableJoint:
   m_ObjectHideFlags: 0
@@ -3947,7 +3956,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!136 &4816744771596851813
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4106,7 +4115,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!153 &4816744771210518760
 ConfigurableJoint:
   m_ObjectHideFlags: 0
@@ -4257,7 +4266,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!65 &4816744770064009926
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4428,7 +4437,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!65 &4816744771144850335
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4586,7 +4595,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!153 &4816744771488869741
 ConfigurableJoint:
   m_ObjectHideFlags: 0
@@ -4731,7 +4740,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!135 &4816744770326909494
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4919,6 +4928,8 @@ MonoBehaviour:
   isLeftArm: 0
   targetAnimator: {fileID: 4816744769744483269}
   player: {fileID: 4816744771534585253}
+  itemOnLeft: 0
+  itemOnRight: 0
   leftHandKeyDetected: 0
   rightHandKeyDetected: 0
 --- !u!1 &7531437917036888969 stripped
@@ -4942,7 +4953,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!136 &4816744771132482498
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5101,7 +5112,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!136 &4816744769658568043
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5260,7 +5271,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!136 &4816744770710766510
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5419,7 +5430,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!136 &4816744770201813057
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5578,7 +5589,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!135 &4816744771361023809
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5752,6 +5763,8 @@ MonoBehaviour:
   isLeftArm: 1
   targetAnimator: {fileID: 4816744769744483269}
   player: {fileID: 4816744771534585253}
+  itemOnLeft: 0
+  itemOnRight: 0
   leftHandKeyDetected: 0
   rightHandKeyDetected: 0
 --- !u!114 &6486084026812031679

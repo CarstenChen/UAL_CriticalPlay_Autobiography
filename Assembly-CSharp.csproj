@@ -68,6 +68,7 @@
     <Compile Include="Assets\Controller.cs" />
     <Compile Include="Assets\InputHandler.cs" />
     <Compile Include="Assets\Scripts\InteractionArea.cs" />
+    <Compile Include="Assets\ClipManager.cs" />
     <Compile Include="Assets\WaitPlayerLearn.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueManager.cs" />
     <Compile Include="Assets\UISticker.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="Assets\Mocha Inc_\Active Ragdoll Character Controller\Scripts\MatchRotation.cs" />
     <Compile Include="Assets\Mocha Inc_\Active Ragdoll Character Controller\Scripts\PhysicsJointController.cs" />
     <Compile Include="Assets\Scripts\Dialogue\PlotManager.cs" />
+    <Compile Include="Assets\Thanks.cs" />
     <Compile Include="Assets\Mocha Inc_\Active Ragdoll Character Controller\Scripts\PressurePlateScript.cs" />
     <Compile Include="Assets\Mocha Inc_\Active Ragdoll Character Controller\Scripts\LauncherScript.cs" />
     <Compile Include="Assets\Mocha Inc_\Active Ragdoll Character Controller\Scripts\DisableColliderScript.cs" />
@@ -95,6 +97,7 @@
     <Compile Include="Assets\GrabAndDrop.cs" />
     <Compile Include="Assets\Mocha Inc_\Active Ragdoll Character Controller\Scripts\showSkinnedMeshScript.cs" />
     <Compile Include="Assets\Mocha Inc_\Active Ragdoll Character Controller\Scripts\AiAgentController.cs" />
+    <Compile Include="Assets\GameManagerFullRoom.cs" />
     <Compile Include="Assets\Mocha Inc_\Active Ragdoll Character Controller\Scripts\PushEventScript.cs" />
     <Compile Include="Assets\Mocha Inc_\Active Ragdoll Character Controller\Scripts\AiRagdollBody.cs" />
     <Compile Include="Assets\SceneLoader.cs" />
@@ -114,9 +117,6 @@
     <Compile Include="Assets\PunchDamage.cs" />
     <Compile Include="Assets\LayDownEventManager.cs" />
     <Compile Include="Assets\Mocha Inc_\Active Ragdoll Character Controller\Scripts\DestructableScript.cs" />
-    <Compile Include="Assets\GameManagerFullRoom.cs" />
-    <Compile Include="Assets\ClipManager.cs" />
-    <Compile Include="Assets\Thanks.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
