@@ -5054,26 +5054,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4816744770710766508, guid: 54b827eefa70bc44d925642e07880714,
-        type: 3}
-      propertyPath: m_AngularXDrive.positionSpring
-      value: 2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 4816744770710766508, guid: 54b827eefa70bc44d925642e07880714,
-        type: 3}
-      propertyPath: m_AngularYZDrive.positionSpring
-      value: 2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 4816744770914540066, guid: 54b827eefa70bc44d925642e07880714,
-        type: 3}
-      propertyPath: m_AngularXDrive.positionSpring
-      value: 2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 4816744770914540066, guid: 54b827eefa70bc44d925642e07880714,
-        type: 3}
-      propertyPath: m_AngularYZDrive.positionSpring
-      value: 2000
-      objectReference: {fileID: 0}
     - target: {fileID: 4816744771534585251, guid: 54b827eefa70bc44d925642e07880714,
         type: 3}
       propertyPath: m_Name

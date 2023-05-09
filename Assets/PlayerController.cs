@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
     {
         moveDirection = new Vector3(move.x, 0, move.y).normalized;
 
-        if (moveDirection.magnitude >= 0.1f && !isLaying)
+        if (move.magnitude >= 0.1f && !isLaying)
         {
             Move();
             Rotate();

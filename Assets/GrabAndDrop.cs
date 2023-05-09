@@ -106,7 +106,8 @@ public class GrabAndDrop : MonoBehaviour
 
             if((heldObjectLeft.tag=="Player1"|| heldObjectLeft.tag == "Player2")&&heldObjectLeft!=heldObjectRight)
             {
-                heldObjectLeft.GetComponent<Rigidbody>().velocity = heldObjectLeft.GetComponent<Rigidbody>().velocity * throwPlayerMultiplier;
+                heldObjectLeft.GetComponent<Rigidbody>().AddForce(heldObjectLeft.GetComponent<Rigidbody>().velocity * throwPlayerMultiplier);
+                //heldObjectLeft.GetComponent<Rigidbody>().velocity = heldObjectLeft.GetComponent<Rigidbody>().velocity * throwPlayerMultiplier;
             }
             else
             {
@@ -129,7 +130,8 @@ public class GrabAndDrop : MonoBehaviour
 
             if ((heldObjectRight.tag == "Player1" || heldObjectRight.tag == "Player2") && heldObjectLeft != heldObjectRight)
             {
-                heldObjectRight.GetComponent<Rigidbody>().velocity = heldObjectRight.GetComponent<Rigidbody>().velocity * throwPlayerMultiplier;
+                heldObjectRight.GetComponent<Rigidbody>().AddForce(heldObjectRight.GetComponent<Rigidbody>().velocity * throwPlayerMultiplier);
+                //heldObjectRight.GetComponent<Rigidbody>().velocity = heldObjectRight.GetComponent<Rigidbody>().velocity * throwPlayerMultiplier;
             }
             else
             {
@@ -177,12 +179,14 @@ public class GrabAndDrop : MonoBehaviour
 
                 grabJointLeft.anchor = new Vector3(0, 0, 0);
 
-                grabJointLeft.breakForce = 2000f;
+                grabJointLeft.breakForce = 8000f;
 
                 grabJointLeft.angularXDrive = jointDrive;
                 grabJointLeft.angularYZDrive = jointDrive;
 
                 grabJointLeft.connectedMassScale = 0.5f;
+
+                //grabJointLeft.autoConfigureConnectedAnchor = false;
             }
 
             if (heldObjectLeft && heldObjectLeft.tag == "ArrangedItem")
@@ -223,20 +227,22 @@ public class GrabAndDrop : MonoBehaviour
 
                 grabJointRight.anchor = new Vector3(0, 0, 0);
 
-                grabJointRight.breakForce = 2000f;
+                grabJointRight.breakForce = 8000f;
 
                 grabJointRight.angularXDrive = jointDrive;
                 grabJointRight.angularYZDrive = jointDrive;
 
                 grabJointRight.connectedMassScale = 0.5f;
 
-                if (heldObjectRight && heldObjectRight.tag == "ArrangedItem")
-                {
-                    ArrangeRequiredMesh m = heldObjectRight.GetComponent<ArrangeRequiredMesh>();
-                    m.isGrabbed = true;
-                    if (this.tag == "Player1") m.isGrabbedByP1Right = true;
-                    if (this.tag == "Player2") m.isGrabbedByP2Right = true;
-                }
+                //grabJointRight.autoConfigureConnectedAnchor = false;
+            }
+
+            if (heldObjectRight && heldObjectRight.tag == "ArrangedItem")
+            {
+                ArrangeRequiredMesh m = heldObjectRight.GetComponent<ArrangeRequiredMesh>();
+                m.isGrabbed = true;
+                if (this.tag == "Player1") m.isGrabbedByP1Right = true;
+                if (this.tag == "Player2") m.isGrabbedByP2Right = true;
             }
         }
     }
